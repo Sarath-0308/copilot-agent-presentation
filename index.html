@@ -61,10 +61,17 @@
     opacity: 0.85;
     pointer-events: none;
     z-index: 10;
+    line-height: 0;
   }
 
-  .slide { position: relative; }
-  .welcome-slide { position: relative; }
+  .ibm-logo-corner img {
+    width: 60px;
+    height: auto;
+    display: block;
+  }
+
+  .slide { position: relative; overflow: visible; }
+  .welcome-slide { position: relative; overflow: visible; }
 
   .step-badge {
     background: #1F70C1;
