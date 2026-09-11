@@ -53,8 +53,21 @@
     border-bottom: 2px solid #e5e7eb;
   }
 
+  /* IBM logo watermark on slides */
+  .ibm-logo-corner {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .slide { position: relative; }
+  .welcome-slide { position: relative; }
+
   .step-badge {
-    background: #3b82d4;
+    background: #1F70C1;
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -66,7 +79,7 @@
     margin-top: 4px;
   }
 
-  .step-badge.intro { background: #7c5cd8; }
+  .step-badge.intro { background: #054ADA; }
   .step-badge.done  { background: #16a34a; }
 
   .slide-header-text h2 {
@@ -109,7 +122,7 @@
   .intro-card .ic-step {
     font-size: 11px;
     font-weight: 700;
-    color: #3b82d4;
+    color: #1F70C1;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 5px;
@@ -143,7 +156,7 @@
     height: 22px;
     min-width: 22px;
     border-radius: 50%;
-    background: #3b82d4;
+    background: #1F70C1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +173,7 @@
     stroke-linejoin: round;
   }
 
-  .check-icon.purple { background: #7c5cd8; }
+  .check-icon.purple { background: #054ADA; }
 
   /* Field cards */
   .field-grid {
@@ -176,8 +189,8 @@
     padding: 16px 18px;
   }
 
-  .field-card.blue  { border-color: #3b82d4; background: #eff6ff; }
-  .field-card.purple{ border-color: #7c5cd8; background: #faf5ff; grid-column: span 2; }
+  .field-card.blue  { border-color: #1F70C1; background: #e8f1fb; }
+  .field-card.purple{ border-color: #054ADA; background: #eef2ff; grid-column: span 2; }
 
   .field-card .fc-label {
     font-size: 11px;
@@ -188,8 +201,8 @@
     margin-bottom: 6px;
   }
 
-  .field-card.blue .fc-label   { color: #3b82d4; }
-  .field-card.purple .fc-label { color: #7c5cd8; }
+  .field-card.blue .fc-label   { color: #1F70C1; }
+  .field-card.purple .fc-label { color: #054ADA; }
 
   .field-card .fc-value {
     font-size: 13.5px;
@@ -273,8 +286,8 @@
     color: #fff;
   }
 
-  .np-chip.blue   { background: #3b82d4; }
-  .np-chip.purple { background: #7c5cd8; }
+  .np-chip.blue   { background: #1F70C1; }
+  .np-chip.purple { background: #054ADA; }
   .np-chip.green  { background: #16a34a; }
   .np-arrow { color: #57606a; font-size: 16px; }
 
@@ -296,7 +309,7 @@
     height: 28px;
     min-width: 28px;
     border-radius: 50%;
-    background: #3b82d4;
+    background: #1F70C1;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
@@ -339,7 +352,7 @@
   }
 
   .nav-btn {
-    background: #3b82d4;
+    background: #1F70C1;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -350,7 +363,7 @@
     font-family: inherit;
   }
 
-  .nav-btn:hover   { background: #2563c0; }
+  .nav-btn:hover   { background: #0d5aa7; }
   .nav-btn:disabled{ background: #334155; color: #94a3b8; cursor: default; }
 
   .slide-indicator { display: flex; gap: 8px; align-items: center; }
@@ -364,7 +377,7 @@
     transition: background 0.2s, transform 0.2s;
   }
 
-  .dot.active { background: #3b82d4; transform: scale(1.35); }
+  .dot.active { background: #1F70C1; transform: scale(1.35); }
 
   .slide-count { font-size: 12px; color: #94a3b8; margin-left: 10px; }
 
@@ -380,7 +393,7 @@
 
   .progress-bar-fill {
     height: 100%;
-    background: #3b82d4;
+    background: #1F70C1;
     border-radius: 2px;
     transition: width 0.3s ease;
   }
@@ -409,7 +422,7 @@
 
   /* ── Welcome slide ── */
   .welcome-slide {
-    background: linear-gradient(145deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    background: linear-gradient(145deg, #0a1628 0%, #0d2d5e 50%, #0a1628 100%);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 24px 64px rgba(0,0,0,0.6);
@@ -429,8 +442,8 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 60% 40%, rgba(59,130,212,0.15) 0%, transparent 70%),
-                radial-gradient(ellipse at 30% 70%, rgba(124,92,216,0.12) 0%, transparent 60%);
+    background: radial-gradient(ellipse at 60% 40%, rgba(31,112,193,0.2) 0%, transparent 70%),
+                radial-gradient(ellipse at 30% 70%, rgba(5,74,218,0.15) 0%, transparent 60%);
     pointer-events: none;
   }
 
@@ -439,7 +452,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    color: #3b82d4;
+    color: #5ba4f5;
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeUp 0.6s ease 0.3s forwards;
@@ -455,7 +468,7 @@
     animation: fadeUp 0.7s ease 0.6s forwards;
   }
 
-  .wl-title span { color: #3b82d4; }
+  .wl-title span { color: #5ba4f5; }
 
   .wl-typewriter {
     font-size: 17px;
@@ -467,12 +480,12 @@
     animation: fadeUp 0.6s ease 1s forwards;
   }
 
-  .wl-typewriter .typed-text { color: #a5b4fc; font-weight: 500; }
+  .wl-typewriter .typed-text { color: #7ec8f7; font-weight: 500; }
   .wl-typewriter .cursor {
     display: inline-block;
     width: 2px;
     height: 1em;
-    background: #a5b4fc;
+    background: #7ec8f7;
     vertical-align: middle;
     margin-left: 2px;
     animation: blink 0.75s step-end infinite;
@@ -481,7 +494,7 @@
   .wl-divider {
     width: 60px;
     height: 3px;
-    background: #3b82d4;
+    background: #1F70C1;
     border-radius: 2px;
     margin: 0 auto 32px;
     opacity: 0;
@@ -515,7 +528,7 @@
   }
 
   .wl-cta-btn {
-    background: #3b82d4;
+    background: #1F70C1;
     color: #fff;
     border: none;
     border-radius: 30px;
@@ -527,7 +540,7 @@
     letter-spacing: 0.5px;
   }
 
-  .wl-cta-btn:hover { background: #2563c0; }
+  .wl-cta-btn:hover { background: #0d5aa7; }
 
   .wl-particles {
     position: absolute;
@@ -541,7 +554,7 @@
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background: rgba(99,102,241,0.5);
+    background: rgba(31,112,193,0.5);
     animation: float linear infinite;
   }
 
@@ -580,6 +593,7 @@
 
 <div class="slide-container">
 
+  <!-- IBM Logo SVG snippet (reused on every slide) -->
   <!-- SLIDE 0: Welcome -->
   <div class="welcome-slide active" id="slide-0">
     <div class="wl-particles" id="particles"></div>
@@ -596,6 +610,15 @@
     </div>
     <div class="wl-cta">
       <button class="wl-cta-btn" onclick="goTo(1)">Let's Get Started &#8594;</button>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -615,11 +638,20 @@
         <div class="intro-card"><div class="ic-step">Step 3</div><div class="ic-title">Configure Name, Description &amp; Instructions</div></div>
         <div class="intro-card"><div class="ic-step">Step 4</div><div class="ic-title">Add Knowledge Sources</div></div>
         <div class="intro-card"><div class="ic-step">Step 5</div><div class="ic-title">Save &amp; Use Your Agent</div></div>
-        <div class="intro-card" style="background:#eff6ff;border-color:#3b82d4;">
+        <div class="intro-card" style="background:#e8f1fb;border-color:#1F70C1;">
           <div class="ic-step">Outcome</div>
-          <div class="ic-title" style="color:#3b82d4;">Your AI Agent is Ready!</div>
+          <div class="ic-title" style="color:#1F70C1;">Your AI Agent is Ready!</div>
         </div>
       </div>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -642,6 +674,15 @@
       <div class="note-box">
         &#9888; <strong>Prerequisite:</strong> You need to have the Microsoft 365 Copilot application installed on your local workstation and sign in using your UPSer's ID.
       </div>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -672,6 +713,15 @@
         </div>
       </div>
     </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
+    </div>
   </div>
 
   <!-- SLIDE 4: Configure Agent -->
@@ -701,6 +751,15 @@
       <div class="note-box">
         &#128161; <strong>Tip:</strong> The system prompt is the most powerful field. Be specific about the agent's persona, scope, boundaries, and response style for the best results.
       </div>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -739,6 +798,15 @@
         &#9888; <strong>Admin Note:</strong> Knowledge source integration may require your Microsoft 365 admin to enable the feature. Check with your IT team if options are greyed out.
       </div>
     </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
+    </div>
   </div>
 
   <!-- SLIDE 6: Save & Use -->
@@ -758,6 +826,15 @@
         <li><span class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>Share your agent with colleagues by copying the agent link or publishing to your org's Copilot catalog.</span></li>
         <li><span class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>You can <strong>edit the agent anytime</strong> — update instructions, add new sources, or rename it.</span></li>
       </ul>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -783,27 +860,45 @@
         <div class="cb-desc">Your personalized AI assistant is ready to supercharge productivity across Microsoft 365 — Teams, Outlook, Word, and beyond.</div>
       </div>
     </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#1F70C1">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
+    </div>
   </div>
 
   <!-- SLIDE 8: Q & A -->
   <div class="welcome-slide" id="slide-8">
     <div class="wl-particles" id="particles-qa"></div>
     <div class="wl-eyebrow">Open Floor &nbsp;|&nbsp; Ask Anything</div>
-    <div class="wl-title" style="font-size:44px;">Q <span style="color:#7c5cd8;">&amp;</span> A</div>
+    <div class="wl-title" style="font-size:44px;">Q <span style="color:#054ADA;">&amp;</span> A</div>
     <div class="wl-typewriter">
       <span id="typed-text-qa" class="typed-text"></span><span class="cursor"></span>
     </div>
-    <div class="wl-divider" style="background:#7c5cd8;"></div>
+    <div class="wl-divider" style="background:#054ADA;"></div>
     <div class="wl-meta">
-      <div class="wl-meta-item" style="background:rgba(124,92,216,0.12);border-color:rgba(124,92,216,0.3);">
-        <strong style="color:#c4b5fd;">Topic</strong>Copilot Agents
+      <div class="wl-meta-item" style="background:rgba(5,74,218,0.12);border-color:rgba(5,74,218,0.3);">
+        <strong style="color:#7ec8f7;">Topic</strong>Copilot Agents
       </div>
-      <div class="wl-meta-item" style="background:rgba(124,92,216,0.12);border-color:rgba(124,92,216,0.3);">
-        <strong style="color:#c4b5fd;">Feel free to</strong>Ask any question!
+      <div class="wl-meta-item" style="background:rgba(5,74,218,0.12);border-color:rgba(5,74,218,0.3);">
+        <strong style="color:#7ec8f7;">Feel free to</strong>Ask any question!
       </div>
-      <div class="wl-meta-item" style="background:rgba(124,92,216,0.12);border-color:rgba(124,92,216,0.3);">
-        <strong style="color:#c4b5fd;">No question</strong>Is too small
+      <div class="wl-meta-item" style="background:rgba(5,74,218,0.12);border-color:rgba(5,74,218,0.3);">
+        <strong style="color:#7ec8f7;">No question</strong>Is too small
       </div>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#5ba4f5">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
@@ -813,7 +908,7 @@
     <div class="wl-eyebrow">Microsoft 365 Copilot &nbsp;|&nbsp; Session Wrap-up</div>
     <div class="wl-title">Thank You <span>So Much!</span></div>
     <div class="wl-typewriter">
-      <span id="typed-text-ty" class="typed-text"></span><span class="cursor" style="background:#a5b4fc;"></span>
+      <span id="typed-text-ty" class="typed-text"></span><span class="cursor" style="background:#7ec8f7;"></span>
     </div>
     <div class="wl-divider"></div>
     <div class="wl-meta">
@@ -828,7 +923,16 @@
       </div>
     </div>
     <div class="wl-cta">
-      <button class="wl-cta-btn" onclick="goTo(0)" style="background:#7c5cd8;">&#8592; Back to Start</button>
+      <button class="wl-cta-btn" onclick="goTo(0)" style="background:#054ADA;">&#8592; Back to Start</button>
+    </div>
+    <div class="ibm-logo-corner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="20" viewBox="0 0 52 20" aria-label="IBM">
+        <g fill="#5ba4f5">
+          <rect x="0" y="0" width="8" height="2.2"/><rect x="0" y="3" width="8" height="2.2"/><rect x="0" y="6" width="8" height="2.2"/><rect x="0" y="9" width="8" height="2.2"/><rect x="0" y="12" width="8" height="2.2"/><rect x="0" y="15" width="8" height="2.2"/><rect x="0" y="17.8" width="8" height="2.2"/>
+          <rect x="11" y="0" width="14" height="2.2"/><rect x="11" y="3" width="10" height="2.2"/><rect x="11" y="6" width="14" height="2.2"/><rect x="11" y="9" width="14" height="2.2"/><rect x="11" y="12" width="10" height="2.2"/><rect x="11" y="15" width="10" height="2.2"/><rect x="11" y="17.8" width="14" height="2.2"/>
+          <rect x="28" y="0" width="24" height="2.2"/><rect x="28" y="3" width="9" height="2.2"/><rect x="40" y="3" width="12" height="2.2"/><rect x="28" y="6" width="9" height="2.2"/><rect x="37" y="6" width="15" height="2.2"/><rect x="28" y="9" width="24" height="2.2"/><rect x="28" y="12" width="9" height="2.2"/><rect x="37" y="12" width="15" height="2.2"/><rect x="28" y="15" width="9" height="2.2"/><rect x="40" y="15" width="12" height="2.2"/><rect x="28" y="17.8" width="24" height="2.2"/>
+        </g>
+      </svg>
     </div>
   </div>
 
