@@ -9,7 +9,7 @@
 
   body {
     font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
-    background: linear-gradient(160deg, #0a2a6e 0%, #1a4aad 50%, #0d3580 100%);
+    background: hsl(223, 88%, 19%);
     color: #1f2328;
     min-height: 100vh;
     display: flex;
@@ -429,7 +429,7 @@
 
   /* ── Welcome slide ── */
   .welcome-slide {
-    background: #062165;
+    background: hsl(223, 88%, 19%);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 24px 64px rgba(0,0,0,0.6);
@@ -934,23 +934,17 @@
   }
   setTimeout(typeLoop, 1400);
 
-  // ── Floating particles (Welcome slide) ──
+  // ── Floating particles ──
   var pContainer = document.getElementById('particles');
-  for (var p = 0; p < 40; p++) {
+  for (var p = 0; p < 18; p++) {
     var el = document.createElement('div');
     el.className = 'particle';
     el.style.left = (Math.random() * 100) + '%';
     el.style.bottom = '-10px';
-    el.style.animationDuration = (5 + Math.random() * 12) + 's';
-    el.style.animationDelay = (Math.random() * 10) + 's';
-    var sz = (2 + Math.random() * 4) + 'px';
-    el.style.width = sz;
-    el.style.height = sz;
-    el.style.opacity = (0.4 + Math.random() * 0.55).toString();
-    // Mix Blue 40 and Gray 20 particles for variety
-    el.style.background = p % 4 === 0
-      ? 'rgba(224,224,224,0.6)'
-      : 'rgba(120,169,255,0.65)';
+    el.style.animationDuration = (6 + Math.random() * 10) + 's';
+    el.style.animationDelay = (Math.random() * 8) + 's';
+    el.style.width = el.style.height = (2 + Math.random() * 3) + 'px';
+    el.style.opacity = (0.3 + Math.random() * 0.5).toString();
     pContainer.appendChild(el);
   }
 
@@ -996,33 +990,30 @@
 
   // ── Q&A particles ──
   var pContainerQa = document.getElementById('particles-qa');
-  for (var pq = 0; pq < 40; pq++) {
+  for (var pq = 0; pq < 18; pq++) {
     var eqa = document.createElement('div');
     eqa.className = 'particle';
     eqa.style.left = (Math.random() * 100) + '%';
     eqa.style.bottom = '-10px';
-    eqa.style.background = pq % 4 === 0 ? 'rgba(224,224,224,0.6)' : 'rgba(120,169,255,0.65)';
-    eqa.style.animationDuration = (5 + Math.random() * 12) + 's';
-    eqa.style.animationDelay = (Math.random() * 10) + 's';
-    var szq = (2 + Math.random() * 4) + 'px';
-    eqa.style.width = szq; eqa.style.height = szq;
-    eqa.style.opacity = (0.4 + Math.random() * 0.55).toString();
+    eqa.style.background = 'rgba(124,92,216,0.5)';
+    eqa.style.animationDuration = (6 + Math.random() * 10) + 's';
+    eqa.style.animationDelay = (Math.random() * 8) + 's';
+    eqa.style.width = eqa.style.height = (2 + Math.random() * 3) + 'px';
+    eqa.style.opacity = (0.3 + Math.random() * 0.5).toString();
     pContainerQa.appendChild(eqa);
   }
 
   // ── Thank You particles ──
   var pContainerTy = document.getElementById('particles-ty');
-  for (var pt = 0; pt < 40; pt++) {
+  for (var pt = 0; pt < 18; pt++) {
     var ety = document.createElement('div');
     ety.className = 'particle';
     ety.style.left = (Math.random() * 100) + '%';
     ety.style.bottom = '-10px';
-    ety.style.background = pt % 4 === 0 ? 'rgba(224,224,224,0.6)' : 'rgba(120,169,255,0.65)';
-    ety.style.animationDuration = (5 + Math.random() * 12) + 's';
-    ety.style.animationDelay = (Math.random() * 10) + 's';
-    var szt = (2 + Math.random() * 4) + 'px';
-    ety.style.width = szt; ety.style.height = szt;
-    ety.style.opacity = (0.4 + Math.random() * 0.55).toString();
+    ety.style.animationDuration = (6 + Math.random() * 10) + 's';
+    ety.style.animationDelay = (Math.random() * 8) + 's';
+    ety.style.width = ety.style.height = (2 + Math.random() * 3) + 'px';
+    ety.style.opacity = (0.3 + Math.random() * 0.5).toString();
     pContainerTy.appendChild(ety);
   }
 
